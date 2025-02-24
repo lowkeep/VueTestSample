@@ -8,5 +8,15 @@
   ],
   "transform": {
     "^.+\\.(ts|tsx)$": "ts-jest"
-  }
+  },
+  "reporters": [
+    "default",
+    ["jest-html-reporters",
+    {
+      "pageTitle": "あいうえおTest Report",
+      "outputPath": "test/test-report.html"
+    }]
+  ],
+  "collectCoverage": true,
+    "coverageDirectory": "test/coverage"
 }
